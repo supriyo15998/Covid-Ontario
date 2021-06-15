@@ -12,7 +12,7 @@ $(document).ready(() => {
     
     $("#loadstrg").on("click",function() {
         $.ajax({
-            url: '../json/vaccine_doses.json',
+            url: 'json/vaccine_doses.json',
             method: "get",
             contentType: "jsonp",
             success: storeJson,
