@@ -15,6 +15,7 @@ $(document).ready(() => {
             url: 'https://supriyo15998.github.io/Covid-Ontario/json/vaccine_doses.json',
             method: "get",
             contentType: "jsonp",
+	    crossDomain: true,
             success: storeJson,
             error: error_json
         });
